@@ -4,11 +4,13 @@
     --img-border-color: #7488B9;
     --img-hover-border-color: #00827F;
     --category-background-color: #F0F8F4;
+    --category-border-color: #dcf1e7;
     --category-number-color: #0E813E;
 }
 .contentBox {
     padding-top: 70px;
 }
+/* 페이지 헤드라인 */
 .adoptHeader {
     height: 130px;
     max-height: 200px;
@@ -18,7 +20,19 @@
     background-color: var(--header-box-color);
     transition: height 0.5s ease-out;
 }
+/* 입양 양식 */
+.adoptForm {
+    background-color: var(--category-background-color);
+    display: flex;
+    flex-direction: column;
+}
 
+/* 가르는 선 */
+.hr {
+    height: 1px;
+    width: 100%;
+    background-color: var(--category-border-color);
+}
 @media (min-width: 1000px) {
     .adoptHeader {
         height: 200px;
