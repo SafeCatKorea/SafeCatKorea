@@ -9,10 +9,10 @@ const Navigation = () => {
         {navName: '유기묘 신고하기', navUrl: '/reportCat'}]
     return (
         <nav className={classes.navBar}>
-            <Link to={'/'}>로고</Link>
+            <Link to={'/'} style={{textDecoration: 'none', color: 'black' }}>로고</Link>
             <div className={classes.navItem}>
                 {menuItem.map(item =>
-                    <Link to={item.navUrl} className={classes.navItemDiv}>
+                    <Link to={item.navUrl} className={classes.navItemDiv} style={{textDecoration: 'none', color: 'black'}}>
                         <div>{item.navName}</div>
                     </Link>
                 )}
