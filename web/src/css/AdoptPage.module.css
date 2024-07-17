@@ -107,7 +107,15 @@
 
 .CardBox {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    flex-wrap: wrap;
+    /*gap: 10px;*/
+    list-style: none;
+    padding: 0;
 }
 
 .adoptDetailCard {
@@ -115,6 +123,7 @@
     border-radius: 13px;
     list-style: none;
     max-width: 300px;
+    flex: 1 1 calc(25% - 20px);
     flex-direction: row;
     margin: 10px;
 }
@@ -162,8 +171,22 @@
     .adoptHeader {
         height: 130px;
     }
+    .adoptDetailCard {
+        flex: 1 1 calc(33% - 25px);
+    }
     input, textarea, select {
         font-size: 15px;
         color: #000;
+    }
+}
+
+@media (max-width: 900px) {
+    .adoptDetailCard {
+        flex: 1 1 calc(50% - 25px);
+    }
+}
+@media (max-width: 600px) {
+    .adoptDetailCard {
+        flex: 1 1 100%;
     }
 }

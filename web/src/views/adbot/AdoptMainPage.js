@@ -93,8 +93,8 @@ const AdoptMain = () => {
                     <label>전체 9,999 건</label>
                     <button>엑셀 다운로드</button>
                 </div>
-                <div className={classes.CardBox}>
-                    <div className={classes.adoptDetailCard}>
+                <ul className={classes.CardBox}>
+                    <li className={classes.adoptDetailCard}>
                         <img
                             src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
                             alt="catImg"/>
@@ -117,8 +117,8 @@ const AdoptMain = () => {
                                 <label className={classes.infoValue}>24-7620</label>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.adoptDetailCard}>
+                    </li>
+                    <li className={classes.adoptDetailCard}>
                         <img
                             src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
                             alt="catImg"/>
@@ -141,8 +141,8 @@ const AdoptMain = () => {
                                 <label className={classes.infoValue}>24-7620</label>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.adoptDetailCard}>
+                    </li>
+                    <li className={classes.adoptDetailCard}>
                         <img
                             src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
                             alt="catImg"/>
@@ -165,8 +165,8 @@ const AdoptMain = () => {
                                 <label className={classes.infoValue}>24-7620</label>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.adoptDetailCard}>
+                    </li>
+                    <li className={classes.adoptDetailCard}>
                         <img
                             src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
                             alt="catImg"/>
@@ -189,12 +189,8 @@ const AdoptMain = () => {
                                 <label className={classes.infoValue}>24-7620</label>
                             </div>
                         </div>
-                    </div>
-
-
-
-
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     );
