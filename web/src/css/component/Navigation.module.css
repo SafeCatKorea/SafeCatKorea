@@ -1,0 +1,20 @@
+.navBar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0 30px 20px;
+    border-bottom: 1px solid black;
+}
+
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 40px;
+}
+
+.navItemDiv{
+    margin-left: 20px;
+}
