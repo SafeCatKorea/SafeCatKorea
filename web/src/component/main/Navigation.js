@@ -11,11 +11,11 @@ const Navigation = () => {
         <nav className={classes.navBar}>
             <Link to={'/'} style={{textDecoration: 'none', color: 'black' }}>로고</Link>
             <div className={classes.navItem}>
-                {menuItem.map(item =>
-                    <Link to={item.navUrl} className={classes.navItemDiv} style={{textDecoration: 'none', color: 'black'}}>
+                {menuItem.map((item, index) => (
+                    <Link key={index} to={item.navUrl} className={classes.navItemDiv} style={{textDecoration: 'none', color: 'black'}}>
                         <div>{item.navName}</div>
                     </Link>
-                )}
+                ))}
             </div>
         </nav>
     );
