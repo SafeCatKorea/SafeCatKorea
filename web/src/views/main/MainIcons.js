@@ -1,8 +1,18 @@
-import React from 'react';
-import {Link} from "react-router-dom";
-import classes from "../../css/main/MainIcons.module.css"
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import classes from "../../css/main/MainIcons.module.css";
 
-const MainIcons = () => {
+const MainIcons = ({ menuFlag }) => {
+  const [animationEnded, setAnimationEnded] = useState(Array(4).fill(false));
+
+  const handleAnimationEnd = (index) => {
+    setAnimationEnded(prevState => {
+      const newState = [...prevState];
+      newState[index] = true;
+      return newState;
+    });
+  };
+
   const icons = [
     {
       title: '전국 유기묘 보호센터',
@@ -25,16 +35,19 @@ const MainIcons = () => {
       desc: '입양 받는 절차에 대해 볼 수 있습니다.'
     },
   ];
+
   return (
     <div className={classes.iconWrapper}>
-      {icons.map(item=>
-        <Link to={item.url} style={{textDecoration: 'none', color: 'black' }}>
-          <div className={classes.iconContainer}>
+      {icons.map((item, index) => (
+        <Link to={item.url} style={{ textDecoration: 'none', color: 'black' }} key={index}>
+          <div
+            className={`${classes.iconContainer} ${classes[`icon${index}`]} ${animationEnded[index] && menuFlag ? classes.changed : ''}`}
+            onAnimationEnd={() => handleAnimationEnd(index)}
+          >
             <div>{item.title}</div>
-            <div>{item.desc}</div>
           </div>
         </Link>
-      )}
+      ))}
     </div>
   );
 };

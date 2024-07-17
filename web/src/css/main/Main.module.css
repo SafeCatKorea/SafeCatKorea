@@ -42,4 +42,12 @@
     border: 3px solid black;
     border-radius: 50%;
     margin: 55px 90px 0 0;
+    cursor: pointer;
+}
+
+.icons{
+    position: absolute;
+}
+.blankMenu{
+    display: none;
 }

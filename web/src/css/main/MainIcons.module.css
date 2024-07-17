@@ -5,8 +5,84 @@
     margin: 0 0 0 100px;
 }
 .iconContainer{
-    padding: 10px 10px 10px 10px;
-    margin: 90px 5px 0 0;
-    border: 1px solid black;
-    border-radius: 6px;
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    text-align: center;
+    line-height: 180px;
+    font-size: 30px;
+    background: rgb(255, 235, 200);
+}
+
+.icon0{
+  transform: translate(360px, 90px);
+    animation: slideUp0 1s;
+    opacity: 0;
+
+}
+.icon1{
+   transform: translate(580px, 90px);
+    animation: slideUp1 1s;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+.icon2{
+   transform: translate(140px, 300px);
+    animation: slideUp2 1s;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+.icon3{
+  transform: translate(400px, 300px);
+    animation: slideUp3 1s;
+    animation-delay: 0.9s;
+    opacity: 0;
+
+}
+
+.changed {
+    opacity: 1 !important;
+}
+
+@keyframes slideUp0 {
+    from{
+        opacity: 0;
+        transform: translate(360px, 150px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(360px, 90px);
+    }
+}
+
+@keyframes slideUp1 {
+    from{
+        opacity: 0;
+        transform: translate(580px, 150px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(580px, 90px);
+    }
+}
+@keyframes slideUp2 {
+    from{
+        opacity: 0;
+        transform: translate(140px, 360px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(140px, 300px);
+    }
+}
+@keyframes slideUp3 {
+    from{
+        opacity: 0;
+        transform: translate(400px, 360px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(400px, 300px);
+    }
 }
