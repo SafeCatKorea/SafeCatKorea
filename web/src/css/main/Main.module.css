@@ -6,13 +6,14 @@
     font-style: normal;
 
     padding-top: 70px;
+    background: #facb3c;
 
 }
 .mainWrapper{
-    height: 92.7vh;
-
+    height: 92.3vh;
+    margin: 4px 150px 0 150px;
     position: relative;
-    background-position: center 45% ;
+    background-position: center 40% ;
     background-repeat: no-repeat;
     background-size: cover;
 

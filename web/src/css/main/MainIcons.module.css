@@ -19,25 +19,25 @@
 }
 
 .icon0{
-  transform: translate(470px, 90px);
+  transform: translate(400px, 90px);
     animation: slideUp0 1s;
     opacity: 0;
 
 }
 .icon1{
-   transform: translate(600px, 200px);
+   transform: translate(550px, 200px);
     animation: slideUp1 1s;
     animation-delay: 0.3s;
     opacity: 0;
 }
 .icon2{
-   transform: translate(140px, 340px);
+   transform: translate(90px, 340px);
     animation: slideUp2 1s;
     animation-delay: 0.6s;
     opacity: 0;
 }
 .icon3{
-  transform: translate(400px, 430px);
+  transform: translate(350px, 430px);
     animation: slideUp3 1s;
     animation-delay: 0.9s;
     opacity: 0;
@@ -55,7 +55,7 @@
     }
     to{
         opacity: 1;
-        transform: translate(470px, 90px);
+        transform: translate(400px, 90px);
     }
 }
 
@@ -66,17 +66,17 @@
     }
     to{
         opacity: 1;
-        transform: translate(600px, 200px);
+        transform: translate(550px, 200px);
     }
 }
 @keyframes slideUp2 {
     from{
         opacity: 0;
-        transform: translate(140px, 360px);
+        transform: translate(90px, 360px);
     }
     to{
         opacity: 1;
-       transform: translate(140px, 340px);
+       transform: translate(90px, 340px);
     }
 }
 @keyframes slideUp3 {
@@ -86,6 +86,6 @@
     }
     to{
         opacity: 1;
-        transform: translate(400px, 430px);
+        transform: translate(350px, 430px);
     }
 }
