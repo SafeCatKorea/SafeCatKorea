@@ -1,11 +1,15 @@
+
 .main{
     padding-top: 70px;
 }
 .mainWrapper{
     height: 750px;
     margin: 80px 150px 0 150px;
-    background: aqua;
     position: relative;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .mainText{
     margin: 0 0 0 100px;
