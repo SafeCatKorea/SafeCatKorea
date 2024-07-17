@@ -42,7 +42,7 @@
 }
 
 .changed {
-    opacity: 1 !important;
+    opacity: 1;
 }
 
 @keyframes slideUp0 {
