@@ -9,11 +9,15 @@
 }
 .contentBox {
     padding-top: 70px;
+    white-space: pre-wrap;
+    /*padding: 70px 10px 0 10px;*/
+}
+.subContentBox {
+    padding: 10px;
 }
 /* 페이지 헤드라인 */
 .adoptHeader {
-    height: 130px;
-    max-height: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,16 +29,70 @@
     background-color: var(--category-background-color);
     display: flex;
     flex-direction: column;
+    padding: 25px 25px 0 25px;
+    max-width: 100%;
+
+}
+/* 카테고리 구성 */
+.adoptFormGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+.adoptFormGroup label {
+    cursor: default;
+    min-width: 100px;
+    margin-left: 5px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.adoptFormControl {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid var(--category-border-color);
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-weight: normal;
+    padding: 12px 10px;
+}
+.adoptFormSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.adoptFormSubmit button {
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    line-height: 1;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: var(--category-number-color);
 }
 
 /* 가르는 선 */
 .hr {
     height: 1px;
     width: 100%;
+    margin-top: 5px;
     background-color: var(--category-border-color);
 }
-@media (min-width: 1000px) {
+/* 하이폰 */
+.hyphen {
+    margin: 0.5rem;
+}
+@media (max-width: 1000px) {
     .adoptHeader {
-        height: 200px;
+        height: 130px;
+    }
+    input, textarea, select {
+        font-size: 15px;
+        color: #000;
     }
 }
