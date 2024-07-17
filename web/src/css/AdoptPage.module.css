@@ -1,0 +1,15 @@
+:root {
+    --header-box-color: #F4F2EE;
+    --selected-title-color: #63813E;
+}
+.contentBox {
+    padding-top: 70px;
+}
+.adoptHeader {
+    height: 130px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-box-color);
+}
