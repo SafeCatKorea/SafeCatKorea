@@ -1,6 +1,10 @@
 :root {
     --header-box-color: #F4F2EE;
     --selected-title-color: #63813E;
+    --img-border-color: #7488B9;
+    --img-hover-border-color: #00827F;
+    --category-background-color: #F0F8F4;
+    --category-number-color: #0E813E;
 }
 .contentBox {
     padding-top: 70px;
@@ -12,4 +16,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--header-box-color);
+    transition: height 0.5s ease-out;
+}
+
+@media (min-width: 1000px) {
+    .adoptHeader {
+        height: 200px;
+    }
 }
