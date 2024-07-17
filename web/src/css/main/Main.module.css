@@ -1,0 +1,20 @@
+.main{
+    padding-top: 70px;
+}
+.mainWrapper{
+    height: 750px;
+    margin: 80px 150px 0 150px;
+    background: aqua;
+    position: relative;
+}
+.mainText{
+    margin: 0 0 0 100px;
+    padding: 60px 0 0 10px;
+    border-left: 1rem solid black;
+}
+.title{
+    margin: 0;
+}
+.desc{
+
+}
