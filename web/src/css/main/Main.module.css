@@ -9,10 +9,10 @@
 
 }
 .mainWrapper{
-    height: 84.3vh;
-    margin: 80px 150px 0 150px;
+    height: 92.7vh;
+
     position: relative;
-    background-position: center ;
+    background-position: center 45% ;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -21,9 +21,10 @@
     align-items: start;
 }
 .mainText{
+    color: #263645;
     margin: 0 0 0 100px;
     padding: 60px 0 0 10px;
-    border-left: 1rem solid black;
+    border-left: 1rem solid #263645;
 }
 .title{
     margin: 0;
@@ -34,18 +35,20 @@
 }
 
 .menuIcon{
+    color: #263645;
     width: 100px;
     height: 100px;
     font-size: 50px;
     text-align: center;
     line-height: 100px;
-    border: 3px solid black;
+    border: 3px solid #263645;
     border-radius: 50%;
     margin: 55px 90px 0 0;
     cursor: pointer;
 }
 
 .icons{
+
     position: absolute;
 }
 .blankMenu{
