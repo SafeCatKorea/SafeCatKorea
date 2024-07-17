@@ -89,6 +89,112 @@ const AdoptMain = () => {
                         <button> 조회</button>
                     </div>
                 </div>
+                <div className={classes.adoptDetailTitle}>
+                    <label>전체 9,999 건</label>
+                    <button>엑셀 다운로드</button>
+                </div>
+                <div className={classes.CardBox}>
+                    <div className={classes.adoptDetailCard}>
+                        <img
+                            src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
+                            alt="catImg"/>
+                        <div className={classes.adoptDetailInfo}>
+                            <div className={classes.infoHeader}>한국 고양이</div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>공고 번호</div>
+                                <label className={classes.infoValue}>광주-광산-2024-00487</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>성별</div>
+                                <label className={classes.infoValue}>수컷</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>발견장소</div>
+                                <label className={classes.infoValue}>광산구 운남동</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>특징</div>
+                                <label className={classes.infoValue}>24-7620</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classes.adoptDetailCard}>
+                        <img
+                            src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
+                            alt="catImg"/>
+                        <div className={classes.adoptDetailInfo}>
+                            <div className={classes.infoHeader}>한국 고양이</div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>공고 번호</div>
+                                <label className={classes.infoValue}>광주-광산-2024-00487</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>성별</div>
+                                <label className={classes.infoValue}>수컷</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>발견장소</div>
+                                <label className={classes.infoValue}>광산구 운남동</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>특징</div>
+                                <label className={classes.infoValue}>24-7620</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classes.adoptDetailCard}>
+                        <img
+                            src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
+                            alt="catImg"/>
+                        <div className={classes.adoptDetailInfo}>
+                            <div className={classes.infoHeader}>한국 고양이</div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>공고 번호</div>
+                                <label className={classes.infoValue}>광주-광산-2024-00487</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>성별</div>
+                                <label className={classes.infoValue}>수컷</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>발견장소</div>
+                                <label className={classes.infoValue}>광산구 운남동</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>특징</div>
+                                <label className={classes.infoValue}>24-7620</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classes.adoptDetailCard}>
+                        <img
+                            src={"https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2024/07/202407171607414.jpg"}
+                            alt="catImg"/>
+                        <div className={classes.adoptDetailInfo}>
+                            <div className={classes.infoHeader}>한국 고양이</div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>공고 번호</div>
+                                <label className={classes.infoValue}>광주-광산-2024-00487</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>성별</div>
+                                <label className={classes.infoValue}>수컷</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>발견장소</div>
+                                <label className={classes.infoValue}>광산구 운남동</label>
+                            </div>
+                            <div className={classes.adoptInfoItem}>
+                                <div className={classes.infoTitle}>특징</div>
+                                <label className={classes.infoValue}>24-7620</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
             </div>
         </div>
     );

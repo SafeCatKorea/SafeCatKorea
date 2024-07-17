@@ -86,6 +86,66 @@
     border-radius: 7px;
     background-color: var(--category-number-color);
 }
+/* */
+.adoptDetailTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.adoptDetailTitle button {
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    line-height: 1;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: var(--img-border-color);
+}
+
+.CardBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.adoptDetailCard {
+    border: 1px solid var(--img-border-color);
+    border-radius: 13px;
+    list-style: none;
+    max-width: 300px;
+    flex-direction: row;
+    margin: 10px;
+}
+.adoptDetailCard img {
+    width: 100%;
+    height: 300px;
+    border-radius: 13px;
+}
+.adoptDetailInfo {
+    white-space: nowrap;
+    max-width: 300px;
+    padding: 0 20px 20px 20px;
+}
+.adoptInfoItem {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 0 2px 0;
+}
+.infoHeader {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.infoTitle {
+    color: #7488B9;
+    margin-right: 15px;
+    min-width: 70px;
+}
+.infoValue {
+
+}
 
 /* 가르는 선 */
 .hr {
