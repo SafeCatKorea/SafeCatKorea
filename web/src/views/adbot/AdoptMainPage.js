@@ -1,7 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from '../../css/AdoptPage.module.css';
 
 const AdoptMain = () => {
+    const [isScreen, setIsScreen] = React.useState(window.innerWidth >= 1000);
+
+    const handleResize = () => {
+        setIsScreen(window.innerWidth <= 768);
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <div className={classes.contentBox}>
             <div className={classes.adoptHeader}>
@@ -9,7 +22,7 @@ const AdoptMain = () => {
             </div>
             <div className={classes.subContentBox}>
                 <div className={classes.adoptForm}>
-                    <div className={classes.adoptFormGroup}>
+                    <div className={isScreen ? classes.adoptFormMobile : classes.adoptFormGroup}>
                         <label>날짜</label>
                         <input type="date"
                                name="searchSDate"

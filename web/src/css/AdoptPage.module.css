@@ -41,6 +41,17 @@
     align-items: center;
     padding: 5px;
 }
+.adoptFormMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+.adoptFormRow {
+    display: flex;
+    flex-direction: row;
+}
 .adoptFormGroup label {
     cursor: default;
     min-width: 100px;
@@ -67,7 +78,7 @@
 }
 .adoptFormSubmit button {
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 30px;
     cursor: pointer;
     line-height: 1;
     color: #fff;
