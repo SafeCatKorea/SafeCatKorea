@@ -1,0 +1,12 @@
+.iconWrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 0 0 100px;
+}
+.iconContainer{
+    padding: 10px 10px 10px 10px;
+    margin: 90px 5px 0 0;
+    border: 1px solid black;
+    border-radius: 6px;
+}
