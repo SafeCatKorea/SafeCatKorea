@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () => {
   return (
-    <div>
+    <div style={{paddingTop:"70px"}}>
       hello world
     </div>
   );
