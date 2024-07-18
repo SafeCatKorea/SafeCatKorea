@@ -16,6 +16,7 @@
     background: rgb(255, 235, 200);
 
     color: #263645;
+    transition: 0.3s all;
 }
 
 .icon0{
@@ -48,6 +49,11 @@
     opacity: 1;
 }
 
+.hoverIcon{
+    width: 300px;
+    height: 300px;
+    transition: 0.3s all;
+}
 @keyframes slideUp0 {
     from{
         opacity: 0;

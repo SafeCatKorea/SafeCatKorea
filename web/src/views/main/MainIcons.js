@@ -4,6 +4,7 @@ import classes from "../../css/main/MainIcons.module.css";
 
 const MainIcons = ({ menuFlag }) => {
   const [animationEnded, setAnimationEnded] = useState(Array(4).fill(false));
+  const [hoverIcon, setHoverIcon] = useState(Array(4).fill(false));
 
   const handleAnimationEnd = (index) => {
     setAnimationEnded(prevState => {
@@ -11,7 +12,23 @@ const MainIcons = ({ menuFlag }) => {
       newState[index] = true;
       return newState;
     });
+  }
+
+    const handleHoverIcon = (index) => {
+      setHoverIcon(prevState => {
+        const newState = [...prevState];
+        newState[index] = true;
+        return newState;
+      });
   };
+
+  const handleHoverOver= (index) =>{
+    setHoverIcon(prevState => {
+      const newState = [...prevState];
+      newState[index] = false;
+      return newState;
+    })
+  }
 
   const icons = [
     {
@@ -41,10 +58,12 @@ const MainIcons = ({ menuFlag }) => {
       {icons.map((item, index) => (
         <Link to={item.url} style={{ textDecoration: 'none', color: 'black' }} key={index}>
           <div
-            className={`${classes.iconContainer} ${classes[`icon${index}`]} ${animationEnded[index] && menuFlag ? classes.changed : ''}`}
+            className={`${classes.iconContainer} ${classes[`icon${index}`]} ${animationEnded[index] && menuFlag ? classes.changed : ''} ${hoverIcon[index] && menuFlag ? classes.hoverIcon : ''}`}
             onAnimationEnd={() => handleAnimationEnd(index)}
+            onMouseOver={()=>handleHoverIcon(index)}
+            onMouseOut={()=>handleHoverOver(index)}
           >
-            <div>{item.title}</div>
+            <div >{item.title}</div>
           </div>
         </Link>
       ))}
