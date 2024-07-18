@@ -2,7 +2,7 @@ import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import "./App.css";
 import Main from "./views/main/Main";
 import Navigation from "./component/main/Navigation";
-import AdoptMainPage from "./views/adbot/AdoptMainPage";
+import AdoptMainPage from "./views/adopt/AdoptMainPage";
 
 
 function App() {
