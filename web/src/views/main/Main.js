@@ -49,8 +49,8 @@ const Main = () => {
           <h1 className={classes.title}>통합 유기묘 플랫폼</h1>
           <div className={classes.desc}>길 잃은 생명에게 나침반을</div>
         </div>
-        <div className={classes.menuIcon} onMouseOver={onMouseOver}>
-          메뉴
+        <div className={classes.menuIcon} onMouseOver={onMouseOver} onClick={()=>setMenuFlag(false)}>
+          {menuFlag? '닫기':'메뉴'}
         </div>
         <div className={`${classes.icons} ${!menuFlag&&classes.blankMenu}`}>
         <MainIcons menuFlag={menuFlag} icons={icons} onClickIcon={onClickIcon}/>
