@@ -56,7 +56,7 @@ const MainIcons = ({ menuFlag }) => {
   return (
     <div className={classes.iconWrapper}>
       {icons.map((item, index) => (
-        <Link to={item.url} style={{ textDecoration: 'none', color: 'black' }} key={index}>
+        <div style={{ textDecoration: 'none', color: 'black' }} key={index}>
           <div
             className={`${classes.iconContainer} ${classes[`icon${index}`]} ${animationEnded[index] && menuFlag ? classes.changed : ''} ${hoverIcon[index] && menuFlag ? classes.hoverIcon : ''}`}
             onAnimationEnd={() => handleAnimationEnd(index)}
@@ -66,7 +66,7 @@ const MainIcons = ({ menuFlag }) => {
             <div >{item.title} </div>
             <div>{hoverIcon[index]&&item.desc}</div>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );
