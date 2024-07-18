@@ -63,7 +63,8 @@ const MainIcons = ({ menuFlag }) => {
             onMouseOver={()=>handleHoverIcon(index)}
             onMouseOut={()=>handleHoverOver(index)}
           >
-            <div >{item.title}</div>
+            <div >{item.title} </div>
+            <div>{hoverIcon[index]&&item.desc}</div>
           </div>
         </Link>
       ))}
