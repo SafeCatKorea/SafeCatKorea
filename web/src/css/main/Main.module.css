@@ -49,9 +49,27 @@
 }
 
 .icons{
-
     position: absolute;
+    z-index: 0;
 }
 .blankMenu{
     display: none;
+}
+
+.iconClickModal{
+        position: absolute;
+        width: 100%;
+    height: 92.7%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+.modalContainer{
+    border: 1px solid inherit ;
+    border-radius: 3px;
+    background: white;
+    width: 1000px;
+    height: 700px;
+    margin: 100px 0 0 23%;
+
 }

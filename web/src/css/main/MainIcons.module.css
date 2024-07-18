@@ -4,6 +4,7 @@
     justify-content: end;
     align-items: center;
     margin: 0 0 0 100px;
+
 }
 .iconContainer{
     width: 180px;
@@ -17,6 +18,8 @@
 
     color: #263645;
     transition: 0.3s all;
+
+    cursor: pointer;
 }
 
 .icon0{
@@ -55,6 +58,7 @@
     transition: 0.3s all;
     line-height: 80px;
 }
+
 @keyframes slideUp0 {
     from{
         opacity: 0;
