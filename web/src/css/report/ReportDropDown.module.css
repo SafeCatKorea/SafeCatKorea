@@ -1,0 +1,9 @@
+.localItemWrapper{
+    margin-top: 4px;
+}
+.localItem{
+    width: 80px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+}
