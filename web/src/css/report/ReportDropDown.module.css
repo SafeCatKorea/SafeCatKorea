@@ -1,9 +1,12 @@
 .localItemWrapper{
-    margin-top: 4px;
+ cursor: pointer;
+    font-size: 20px;
+
 }
 .localItem{
     width: 80px;
     height: 25px;
     border: 1px solid black;
     text-align: center;
+
 }

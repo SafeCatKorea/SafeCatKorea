@@ -2,6 +2,42 @@
     width: 80px;
     height: 25px;
     border: 1px solid black;
- text-align: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    border-radius: 10px;
 }
 
+.reportForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    margin: 100px 0 0 0;
+}
+.reportTitle{
+    font-size: 75px;
+    text-align: center;
+}
+.checkBox{
+    border: 1px solid black;
+    padding: 2px 5px 3px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+.reportForm1{
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.reportDesc{
+    font-size: 30px;
+}
